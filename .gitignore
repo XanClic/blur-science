@@ -1,0 +1,10 @@
+doc/doc-gnuplot*
+doc/doc.aux
+doc/doc.fdb_latexmk
+doc/doc.fls
+doc/doc.log
+doc/doc.out
+doc/doc.pdf
+src/test
+src/test.o
+src/output.ppm
