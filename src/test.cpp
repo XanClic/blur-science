@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <cstdio>
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 
 #include <dake/gl/gl.hpp>
 #include <dake/gl/framebuffer.hpp>
@@ -40,10 +40,16 @@ int main(void)
 {
     SDL_Init(SDL_INIT_VIDEO);
 
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
 
-    SDL_SetVideoMode(64, 64, 32, SDL_OPENGL | SDL_DOUBLEBUF);
+    SDL_Window *wnd = SDL_CreateWindow("blurry science", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 64, 64, SDL_WINDOW_OPENGL);
+    SDL_GL_CreateContext(wnd);
+
 
 
     framebuffer fbos[2] = {
@@ -230,7 +236,7 @@ int main(void)
 
         va.draw(GL_TRIANGLE_STRIP);
 
-        SDL_GL_SwapBuffers();
+        SDL_GL_SwapWindow(wnd);
 
         runs[i] = std::chrono::steady_clock::now();
     }
