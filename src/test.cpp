@@ -236,8 +236,6 @@ int main(void)
 
         va.draw(GL_TRIANGLE_STRIP);
 
-        SDL_GL_SwapWindow(wnd);
-
         runs[i] = std::chrono::steady_clock::now();
     }
 
