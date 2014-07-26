@@ -395,46 +395,92 @@ than the Gaussian radius, so both errors should equal out.
 Full-size:
 \begin{itemize}
     \item 1920x1080, Gaussian ($r = 127$): \\
-        380.67 ms $\pm$87.55 ms
+        399 ms $\pm$959 $\upmu$s
     \item 1920x1080, iterative (7 passes): \\
-        2.43 ms $\pm$0.57 ms
+        2.72 ms $\pm$139 $\upmu$s
     \item 1920x1080, modified iterative (7 passes): \\
-        2.62 ms $\pm$0.62 ms
+        2.88 ms $\pm$130 $\upmu$s
 \end{itemize}
+
+(I cannot explain the extreme value for the Gaussian blur; but it is reproducable, so I am willing to blame the driver)
 
 Downscaled to $\frac 1{16}$:
 \begin{itemize}
     \item 480x270, Gaussian ($r = 31$): \\
-        858.17 $\upmu$s $\pm$301.97 $\upmu$s
+        893 $\upmu$s $\pm$108 $\upmu$s
     \item 480x270, iterative (5 passes): \\
-        542.07 $\upmu$s $\pm$188.97 $\upmu$s 
+        656 $\upmu$s $\pm$137 $\upmu$s
     \item 480x270, modified iterative (5 passes): \\
-        560.59 $\upmu$s $\pm$218.42 $\upmu$s
+        712 $\upmu$s $\pm$134 $\upmu$s
 \end{itemize}
 
 Downscaled to $\frac 1{64}$:
 \begin{itemize}
     \item 240x135, Gaussian ($r = 15$): \\
-        281.27 $\upmu$s $\pm$129.84 $\upmu$s
+        352 $\upmu$s $\pm$86.5 $\upmu$s
     \item 240x135, iterative (4 passes): \\
-        445.11 $\upmu$s $\pm$88.12 $\upmu$s
+        479 $\upmu$s $\pm$79.3 $\upmu$s
     \item 240x135, modified iterative (4 passes): \\
-        447.66 $\upmu$s $\pm$86.46 $\upmu$s
+        499 $\upmu$s $\pm$67.9 $\upmu$s
 \end{itemize}
 
 Downscaled to $\frac 1{256}$:
 \begin{itemize}
     \item 120x67, Gaussian ($r = 7$): \\
-        237.83 $\upmu$s $\pm$95.23 $\upmu$s
+        221 $\upmu$s $\pm$82.4 $\upmu$s
     \item 120x67, iterative (3 passes): \\
-        384.85 $\upmu$s $\pm$79.40 $\upmu$s
+        378 $\upmu$s $\pm$86.8 $\upmu$s
     \item 120x67, modified iterative (3 passes): \\
-        386.28 $\upmu$s $\pm$87.95 $\upmu$s
+        383 $\upmu$s $\pm$81.9 $\upmu$s
+\end{itemize}
+
+\subsection{Intel HD 4000}
+
+Full-size:
+\begin{itemize}
+    \item 1920x1080, Gaussian ($r = 127$): \\
+        112 ms $\pm$50.2 ms
+    \item 1920x1080, iterative (7 passes): \\
+        30.8 $\pm$5.39 ms
+    \item 1920x1080, modified iterative (7 passes): \\
+        30.7 ms $\pm$5.39 ms
+\end{itemize}
+
+Downscaled to $\frac 1{16}$:
+\begin{itemize}
+    \item 480x270, Gaussian ($r = 31$): \\
+        5.42 ms $\pm$90.5 $\upmu$s
+    \item 480x270, iterative (5 passes): \\
+        2.64 ms $\pm$1.11 ms
+    \item 480x270, modified iterative (5 passes): \\
+        2.77 ms $\pm$1.17 ms
+\end{itemize}
+
+Downscaled to $\frac 1{64}$:
+\begin{itemize}
+    \item 240x135, Gaussian ($r = 15$): \\
+        1.44 ms $\pm$140 $\upmu$s
+    \item 240x135, iterative (4 passes): \\
+        1.13 ms $\pm$417 $\upmu$s
+    \item 240x135, modified iterative (4 passes): \\
+        1.17 ms $\pm$348 $\upmu$s
+\end{itemize}
+
+Downscaled to $\frac 1{256}$:
+\begin{itemize}
+    \item 120x67, Gaussian ($r = 7$): \\
+        882 $\upmu$s $\pm$367 $\upmu$s
+    \item 120x67, iterative (3 passes): \\
+        791 $\upmu$s $\pm$429 $\upmu$s
+    \item 120x67, modified iterative (3 passes): \\
+        814 $\upmu$s $\pm$422 $\upmu$s
 \end{itemize}
 
 \subsection{Conclusion}
 
 As one can see, the algorithm presented here is useful only for large blur radii ($r > 25$). For smaller radii (which are especially common on small-sized or downscaled textures), the overhead is too
 large and the well-known standard algorithm is simply fast enough.
+
+On the other hand, for integrated GPUs without dedicated memory for which texture reads are especially costly, the iterative algorithm is faster even for small blur radii.
 
 \end{document}

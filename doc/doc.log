@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.24)  24 JUL 2014 23:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.24)  26 JUL 2014 16:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -487,9 +487,9 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \verbatim@out=\write3
-runsystem(touch w18-test-20147241403.tex)...executed.
+runsystem(touch w18-test-20147261014.tex)...executed.
 
-runsystem(rm -f w18-test-20147241403.tex)...executed.
+runsystem(rm -f w18-test-20147261014.tex)...executed.
 
 Package gnuplottex Info: Automatically converting gnuplot files. on input line 
 109.
@@ -627,7 +627,7 @@ runsystem(gnuplot doc-gnuplottex-fig1.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig1.gnuplot converted on input line 23
 0.
 
-<doc-gnuplottex-fig1.pdf, id=81, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig1.pdf, id=85, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig1.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig1.pdf>
@@ -645,7 +645,7 @@ runsystem(gnuplot doc-gnuplottex-fig2.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig2.gnuplot converted on input line 23
 7.
 
-<doc-gnuplottex-fig2.pdf, id=82, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig2.pdf, id=86, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig2.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig2.pdf>
@@ -664,7 +664,7 @@ runsystem(gnuplot doc-gnuplottex-fig3.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig3.gnuplot converted on input line 24
 4.
 
-<doc-gnuplottex-fig3.pdf, id=83, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig3.pdf, id=87, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig3.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig3.pdf>
@@ -679,7 +679,7 @@ runsystem(gnuplot doc-gnuplottex-fig4.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig4.gnuplot converted on input line 25
 3.
 
-<doc-gnuplottex-fig4.pdf, id=84, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig4.pdf, id=88, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig4.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig4.pdf>
@@ -694,7 +694,7 @@ runsystem(gnuplot doc-gnuplottex-fig5.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig5.gnuplot converted on input line 26
 2.
 
-<doc-gnuplottex-fig5.pdf, id=85, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig5.pdf, id=89, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig5.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig5.pdf>
@@ -724,7 +724,7 @@ runsystem(gnuplot doc-gnuplottex-fig6.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig6.gnuplot converted on input line 27
 0.
 
-<doc-gnuplottex-fig6.pdf, id=136, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig6.pdf, id=140, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig6.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig6.pdf>
@@ -739,7 +739,7 @@ runsystem(gnuplot doc-gnuplottex-fig7.gnuplot)...executed.
 Package gnuplottex Info: doc-gnuplottex-fig7.gnuplot converted on input line 28
 0.
 
-<doc-gnuplottex-fig7.pdf, id=137, 198.7425pt x 113.42375pt>
+<doc-gnuplottex-fig7.pdf, id=141, 198.7425pt x 113.42375pt>
 File: doc-gnuplottex-fig7.pdf Graphic file (type pdf)
 
 <use doc-gnuplottex-fig7.pdf>
@@ -756,25 +756,25 @@ ple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./doc-gnuplottex-fig7.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] <original.jpg, id=166, 481.8pt x 271.0125pt>
+>] <original.jpg, id=170, 481.8pt x 271.0125pt>
 File: original.jpg Graphic file (type jpg)
  <use original.jpg>
 Package pdftex.def Info: original.jpg used on input line 319.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<ifq4.png, id=167, 542.025pt x 271.0125pt>
+<ifq4.png, id=171, 542.025pt x 271.0125pt>
 File: ifq4.png Graphic file (type png)
  <use ifq4.png>
 Package pdftex.def Info: ifq4.png used on input line 328.
 (pdftex.def)             Requested size: 542.02367pt x 271.01183pt.
 
-<gf31.png, id=168, 481.8pt x 271.0125pt>
+<gf31.png, id=172, 481.8pt x 271.0125pt>
 File: gf31.png Graphic file (type png)
  <use gf31.png>
 Package pdftex.def Info: gf31.png used on input line 333.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<if5.png, id=169, 481.8pt x 271.0125pt>
+<if5.png, id=173, 481.8pt x 271.0125pt>
 File: if5.png Graphic file (type png)
  <use if5.png>
 Package pdftex.def Info: if5.png used on input line 338.
@@ -783,19 +783,19 @@ Package pdftex.def Info: if5.png used on input line 338.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<gf50.jpg, id=170, 481.8pt x 271.0125pt>
+<gf50.jpg, id=174, 481.8pt x 271.0125pt>
 File: gf50.jpg Graphic file (type jpg)
  <use gf50.jpg>
 Package pdftex.def Info: gf50.jpg used on input line 343.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<ifq5.png, id=171, 481.8pt x 271.0125pt>
+<ifq5.png, id=175, 481.8pt x 271.0125pt>
 File: ifq5.png Graphic file (type png)
  <use ifq5.png>
 Package pdftex.def Info: ifq5.png used on input line 348.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<g2r31.png, id=172, 481.8pt x 271.0125pt>
+<g2r31.png, id=176, 481.8pt x 271.0125pt>
 File: g2r31.png Graphic file (type png)
  <use g2r31.png>
 Package pdftex.def Info: g2r31.png used on input line 357.
@@ -840,19 +840,19 @@ l.360
                                                   \fi \fi 
 l.360 
        <./original.jpg> <./ifq4.png> <./gf31.png> <./if5.png> <./gf50.jpg> <./i
-fq5.png>] <g4r31.png, id=183, 481.8pt x 271.0125pt>
+fq5.png>] <g4r31.png, id=187, 481.8pt x 271.0125pt>
 File: g4r31.png Graphic file (type png)
  <use g4r31.png>
 Package pdftex.def Info: g4r31.png used on input line 362.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<downscale-diff.jpg, id=184, 481.8pt x 271.0125pt>
+<downscale-diff.jpg, id=188, 481.8pt x 271.0125pt>
 File: downscale-diff.jpg Graphic file (type jpg)
  <use downscale-diff.jpg>
 Package pdftex.def Info: downscale-diff.jpg used on input line 375.
 (pdftex.def)             Requested size: 481.79881pt x 271.01183pt.
 
-<full-diff.jpg, id=185, 481.8pt x 271.0125pt>
+<full-diff.jpg, id=189, 481.8pt x 271.0125pt>
 File: full-diff.jpg Graphic file (type jpg)
  <use full-diff.jpg>
 Package pdftex.def Info: full-diff.jpg used on input line 380.
@@ -865,46 +865,44 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.421     \item 2
-                 40x135, modified iterative (4 passes): \\pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.8}) has been already used, 
-duplicate ignored
+                 40x135, iterative (4 passes): \\pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.8}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.421     \item 2
-                 40x135, modified iterative (4 passes): \\pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.9}) has been already used, 
-duplicate ignored
+                 40x135, iterative (4 passes): \\pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.9}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.421     \item 2
-                 40x135, modified iterative (4 passes): \\pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.10}) has been already used,
- duplicate ignored
+                 40x135, iterative (4 passes): \\pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.10}) has been already used, duplicat
+e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.421     \item 2
-                 40x135, modified iterative (4 passes): \\ <./g2r31.png> <./g4r
-31.png> <./downscale-diff.jpg> <./full-diff.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
- [6
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+                 40x135, iterative (4 passes): \\ <./g2r31.png> <./g4r31.png> <
+./downscale-diff.jpg> <./full-diff.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: 131A3D048800DECFA425905A24817179;914.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 440.
+(rerunfilecheck)             Checksum: 65607B58C5BE13C65AED338F8FBDA836;976.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 486.
  ) 
 Here is how much of TeX's memory you used:
- 8756 strings out of 493308
- 121855 string characters out of 6143616
+ 8758 strings out of 493308
+ 121879 string characters out of 6143616
  268921 words of memory out of 5000000
- 12029 multiletter control sequences out of 15000+600000
+ 12030 multiletter control sequences out of 15000+600000
  15494 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  29i,8n,42p,330b,1623s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -922,10 +920,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on doc.pdf (6 pages, 1182042 bytes).
+Output written on doc.pdf (6 pages, 1183008 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
