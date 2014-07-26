@@ -309,7 +309,7 @@ iterative approach is its inability to be easily adapted to arbitrary blur radii
 required.
 
 
-\pagebreak
+\newpage
 
 \section{Visual comparison}
 
@@ -385,12 +385,14 @@ The second image exhibits some artifacts due to “foreign” pixels added at th
 clear artifacts all over the image, especially along the borders of the original image.
 
 
+\newpage
+
 \section{Performance comparison}
 
 Gaussians were performed without built-in bilinear interpolation; however, take into consideration that the apparent blur radius of the iterative approach (especially the modified one) is larger
 than the Gaussian radius, so both errors should equal out.
 
-\subsection{AMD HD 7850}
+\subsection{AMD HD 7850 with fglrx}
 
 Full-size:
 \begin{itemize}
@@ -434,6 +436,52 @@ Downscaled to $\frac 1{256}$:
         383 $\upmu$s $\pm$81.9 $\upmu$s
 \end{itemize}
 
+\newpage
+
+\subsection{AMD HD 7850 with radeon}
+
+Full-size:
+\begin{itemize}
+    \item 1920x1080, Gaussian ($r = 127$): \\
+        n/a (\url{https://bugs.freedesktop.org/show\_bug.cgi?id=75276})
+    \item 1920x1080, iterative (7 passes): \\
+        3.47 ms $\pm$149 $\upmu$s
+    \item 1920x1080, modified iterative (7 passes): \\
+        3.72 ms $\pm$160 $\upmu$s
+\end{itemize}
+
+Downscaled to $\frac 1{16}$:
+\begin{itemize}
+    \item 480x270, Gaussian ($r = 31$): \\
+        n/a
+    \item 480x270, iterative (5 passes): \\
+        859 $\upmu$s $\pm$59.3 $\upmu$s
+    \item 480x270, modified iterative (5 passes): \\
+        990 $\upmu$s $\pm$103 $\upmu$s
+\end{itemize}
+
+Downscaled to $\frac 1{64}$:
+\begin{itemize}
+    \item 240x135, Gaussian ($r = 15$): \\
+        701 $\upmu$s $\pm$57.2 $\upmu$s
+    \item 240x135, iterative (4 passes): \\
+        630 $\upmu$s $\pm$61.2 $\upmu$s
+    \item 240x135, modified iterative (4 passes): \\
+        702 $\upmu$s $\pm$61.7 $\upmu$s
+\end{itemize}
+
+Downscaled to $\frac 1{256}$:
+\begin{itemize}
+    \item 120x67, Gaussian ($r = 7$): \\
+        432 $\upmu$s $\pm$53.9 $\upmu$s
+    \item 120x67, iterative (3 passes): \\
+        540 $\upmu$s $\pm$49.7 $\upmu$s
+    \item 120x67, modified iterative (3 passes): \\
+        545 $\upmu$s $\pm$51.2 $\upmu$s
+\end{itemize}
+
+\newpage
+
 \subsection{Intel HD 4000}
 
 Full-size:
@@ -475,6 +523,8 @@ Downscaled to $\frac 1{256}$:
     \item 120x67, modified iterative (3 passes): \\
         814 $\upmu$s $\pm$422 $\upmu$s
 \end{itemize}
+
+\newpage
 
 \subsection{Conclusion}
 
